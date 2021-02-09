@@ -13,7 +13,6 @@ export default {
         labels: ['January', 'February', 'March', 'April', 'May','April', 'May','April', 'May'],
         datasets: [
           {
-            label: 'Data One',
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -26,10 +25,25 @@ export default {
             pointBorderColor: '#249EBF',
             //Data to be represented on y-axis
             data: [40, 20, 30, 50, 90],
-            lineTension:false
+            lineTension:false,
+            backgroundColor: 'rgba(0,0,0,0)',
+            borderColor:"#d7d2f7"
             // 곡선
+          },
+          {
+            data: [40, 60, 20, 60,40, 60, 20,40,50],
+            lineTension:false,
+            backgroundColor: 'rgba(0,0,0,0)',
+            borderColor:"#d4d1c4"
+          },
+                    {
+            data: [20, 50, 40, 40,60, 40, 70,80,95],
+            lineTension:false,
+            backgroundColor: 'rgba(0,0,0,0)',
+            borderColor:"#222"
           }
-        ]
+        ],
+        
       },
       //Chart.js options that controls the appearance of the chart
       options: {

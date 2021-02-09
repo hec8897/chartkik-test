@@ -13,7 +13,6 @@ export default {
         labels: ['January', 'February', 'March', 'April', 'May','April', 'May','April', 'May'],
         datasets: [
           {
-            label: 'Data One',
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
