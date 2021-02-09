@@ -1,7 +1,6 @@
 <template>
   <section class="container">
     <h1>Demo examples of vue-chartjs</h1>
-    <div class="columns">
       <div class="column test">
         <h3>Line Chart</h3>
         <LineChart :data="[40, 40, 30, 50, 90, 50, 100, 50, 90 ]" width="1000" height="300" class='con2' style="{margin:0 auto}"/>
@@ -11,7 +10,6 @@
         <PieChart :data="[40, 20, 30, 50, 90, ]" class='con'/>
         <!--Bar Chart example-->
       </div>
-    </div>
     <div class="columns test">
         <h3>Bar Chart</h3>
             <BarChart :data="[40, 40, 30, 50, 90, 50, 100, 50, 90 ]" width="1000" height="300" class='con2' style="{margin:0 auto}"/>
@@ -19,8 +17,6 @@
       <div class="column test">
         <h3>Mix</h3>
         <MixChart :data="[40, 40, 30, 50, 90, 50, 100, 50, 90 ]" width="1000" height="300" class='con2' style="{margin:0 auto}"/>
-
-      </div>
     </div>
   </section>
 </template>
