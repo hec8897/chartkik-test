@@ -1,10 +1,15 @@
 <script>
 import {Bar} from 'vue-chartjs'
 export default {
-  props:['data'],
+  props:['ChartData'],
   extends: Bar,
-  created(){
-      this.datacollection.datasets[0].data = this.data
+  watch:{
+    ChartData(){
+      this.datacollection.datasets[0].data = this.ChartData.DataSum
+      this.datacollection.labels = this.ChartData.DataLegend
+      this.renderChart(this.datacollection, this.options)
+
+    }
   },
   data() {
     return {
@@ -53,9 +58,5 @@ export default {
       }
     }
   },
-  mounted() {
-    //renderChart function renders the chart with the datacollection and options object.
-    this.renderChart(this.datacollection, this.options)
-  }
 }
 </script>
