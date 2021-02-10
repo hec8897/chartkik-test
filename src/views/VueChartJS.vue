@@ -69,7 +69,7 @@
       ChangeData(Data){
         const TargetItem = Data.target.value
 
-        this.$Axios.post('sale/period',{
+        this.$Axios.post('http://54.180.97.6:3000/sale/period',{
         itemCode:TargetItem,
         // comCode:"2",
         periodCode:"1"

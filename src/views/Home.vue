@@ -2,11 +2,9 @@
   <section class="hero is-success is-fullheight">
     <div class="hero-body">
       <div class="container">
-        <h1>Creating Beautiful Charts Using Vue.js Wrappers For Chart.js</h1>
+        <h1>윈윈 비즈 데모 (Win-Win Biz Demo)</h1>
         <ul>
-          <li><router-link to="/chartjs">vue-chartjs</router-link></li>
-          <li><router-link to="/charts">vue-charts</router-link></li>
-          <li><router-link to="/chartKick">vue-chartKick</router-link></li>
+          <li><router-link to="/chartjs">chart Demo</router-link></li>
         </ul>
       </div>
     </div>
@@ -28,7 +26,7 @@ export default {
     justify-content: center;
   }
   h1, h2 {
-    font-weight: normal;
+    
   }
   ul {
     list-style-type: none;
